@@ -665,14 +665,17 @@
 }
 /* seventh page */
 
-
+.cards img{
+    border-radius: 15px;
+    height: 90vh;
+}
 #cta-box{
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 .cta-h{
     font-family: 'Playfair Display', serif;
@@ -688,6 +691,9 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #B8C1CC;
+}
+.class-paracta{
+    margin-top: 0px;
 }
 [type="email"]{
     padding-left: 20px;
@@ -842,7 +848,7 @@ ul li{
         font-size: 12px;
     }
     .fi-content p {
-        line-height: 40px;
+        line-height: 20px;
         font-family: 'Playfair Display', serif;
         color: #FFFFFF;
         font-size: 32px;
@@ -854,7 +860,7 @@ ul li{
         font-size: 18px;
     }
     .fi-button{
-        height: 40px;
+        height: 35px;
         width: 150px;
     }
     .fi-button button {
@@ -880,8 +886,22 @@ ul li{
         margin-top: 40px;
         text-align: center;
         height: auto;
+
+        animation: second 1s linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 20%;
     }
 
+@keyframes second{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
     .second-card {
         margin-top: 20px;
         display: flex;
@@ -895,7 +915,8 @@ ul li{
         margin-top: 30px;
         height: auto;
         display: flex;
-        align-items: center;
+        align-items: normal;
+        gap: 20px;
     }
 
     .card {
@@ -912,7 +933,7 @@ ul li{
     }
 
     .card-title {
-        margin-top: auto;
+        margin-top: 0px;
         font-family: 'Montserrat', sans-serif;
         font-size: 8px;
         color: #071A2B;
@@ -959,6 +980,20 @@ ul li{
     padding-bottom: 20px;
     background-color: #082238;
     height: auto;
+
+    animation: collect 1s linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 10%;
+}
+@keyframes collect{
+    from{
+        opacity: 0;
+        clip-path: inset(0 100% 0 100%);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
 }
 .four-title{
     padding-top: auto;
@@ -1013,8 +1048,18 @@ ul li{
 .craft-video video{
     object-fit: cover;
     height: 600px;
-    width: 100%;
-    
+    width: 100%;  
+}
+.craft-video{
+    padding-top: 20px;
+    animation: video 2s linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 10%;
+}
+@keyframes video{
+    to{
+        transform: rotate(360deg);
+    }
 }
 .craft-right{
     margin-top: 20px;
@@ -1126,38 +1171,48 @@ ul li{
 }
 /* seventh page */
 
+.cards img{
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+}
 #cta-box{
-    padding: 5px;
+    line-height: 12px;
+    padding: 1px 0px 0 20px;
     margin-top: 10px;
     height: auto;
     width:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0px;
+    gap: 1px;
 }
 .cta-h{
     font-family: 'Playfair Display', serif;
-    font-size: 8px;
+    font-size: 6px;
     color: #FFFFFF;
 }
 .cta-text{
     width: 60%;
     font-family: 'Playfair Display', serif;
-    font-size: 10px;
+    font-size: 8px;
     color: #D4AF37;
 }
 .cta-p{
     width: 60%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 8px;
+    font-size: 6px;
     color: #B8C1CC;
 }
+.card-paracta{
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
 [type="email"]{
-    margin-top: auto;
+    margin-top: 1px;
     padding-left: 10px;
-    font-size: 8px;
-    height: 20px;
+    font-size: 5px;
+    height: 15px;
     width: 100px;
     background: none;
     border-radius: 10px;
@@ -1171,7 +1226,7 @@ ul li{
     border: solid 1px #D4AF37;
     font-size: 5px;
     border-radius: 15px;
-    height: 20px;
+    height: 18px;
     width: 50px;
 }
 /* footer */
