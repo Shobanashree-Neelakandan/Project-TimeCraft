@@ -270,7 +270,7 @@
 
 .card-title {
     /* padding-top: 50px; */
-    margin-top: 70px;
+    margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #071A2B;
@@ -915,10 +915,8 @@ ul li{
         margin-top: 30px;
         height: auto;
         display: flex;
-        align-items: normal;
-        gap: 20px;
+        gap: 5px;
     }
-
     .card {
         width: 100%;
     }
@@ -928,6 +926,7 @@ ul li{
     }
 
     .card-img-overlay {
+        margin-top: 1px;
         line-height: 20px;
         margin-left: auto;
     }
@@ -953,15 +952,18 @@ ul li{
     }
 
     .card-para {
+        height: 10px;
+        line-height: 10px;
         width: 55%;
         font-family: 'Playfair Display', serif;
-        font-size: 12px;
+        font-size: 8px;
     }
 
     .card-textp {
+        height: 10px;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .spcl-button {
@@ -971,7 +973,8 @@ ul li{
         font-size: 10px;
         border-radius: 20px;
         height: 20px;
-        width: 150px;
+        width: 100px;
+        padding-bottom: 10px;
     }
 /* fourth page */
 
