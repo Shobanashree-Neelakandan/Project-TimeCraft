@@ -20,7 +20,6 @@
 .nav-item a:hover{
     color: #D4AF37;
 }
-
 .d-flex button {
     font-family: 'Montserrat', sans-serif;
     background-color: #F8F6F0;
@@ -444,12 +443,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(
-         to right,
-        #050F19,
-        #0b2134,
-        #122D42
-    );
+    background-color: #0b2134;
     animation: offer 0.8s ease;
     animation-timeline: view();
     animation-range: entry 20% cover 50%;
@@ -531,8 +525,8 @@
 .box-1{
      background: linear-gradient(
         145deg,
-        #182F43,
-        #0D263B
+        #1c3144,
+        #082236
     );
 
     color: #F8F6F0;
@@ -557,6 +551,7 @@
     color: #FFFFFF;
 }
 .box-1 p{
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #B8C1CC;
     margin-top: 10px;
@@ -680,7 +675,7 @@
 
 .cards img{
     border-radius: 15px;
-    height: 90vh;
+    height: 70vh;
 }
 #cta-box{
     height: 100%;
@@ -715,14 +710,16 @@
     width: 400px;
     background: none;
     border-radius: 15px;
-    border: solid 1px #B8C1CC;
-    color: #050F19;
+    border: solid 2px #B8C1CC;
+}
+[type="email"]:focus{
+    border: solid 4px #FFFFFF;
 }
 #cta-but{
     font-family: 'Montserrat', sans-serif;
     background: none;
     background-color: #D4AF37;
-    border: solid 1px #D4AF37;
+    border: solid 1px #B8C1CC;
     font-size: 20px;
     border-radius: 15px;
     height: 50px;
@@ -731,7 +728,7 @@
     transition: 0.5s ease-in;
 }
 #cta-but:hover{
-    transform: translateX(20px) scale(1.1);
+    transform: scale(1.08);
 }
 /* footer */
 .footer-all{
@@ -757,6 +754,7 @@
      color: #FFFFFF;
 }
 .footer-quick ul li a{
+    margin-left: 20px;
     margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -780,6 +778,7 @@ ul li{
      color: #FFFFFF;
 }
 .footer-customer ul li {
+    margin-left: 20px;
     margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
@@ -791,6 +790,9 @@ ul li{
     font-weight: bold;
     font-size: 20px;
      color: #FFFFFF;
+}
+.mail{
+    margin-left: 20px;
 }
 .footer-contact p{
     margin-top: 10px;
@@ -1061,17 +1063,14 @@ ul li{
 /* fifth page */
 
 .fifth-page{
+
     height: auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: linear-gradient(
-         to right,
-        #050F19,
-        #0b2134,
-        #122D42
-    );
+    background-color: #0b2134;
+    padding-bottom: 25px;
 }
 
 .craft-video video{
@@ -1123,6 +1122,7 @@ ul li{
     font-family: 'Montserrat', sans-serif;
 }
 .craft-box{
+    height: auto;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -1144,8 +1144,8 @@ ul li{
     align-items: center;
     justify-content: center;
     border: solid 1px #071A2B;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 80%;
 }
 
 .box-1 span{
@@ -1154,6 +1154,7 @@ ul li{
     color: #FFFFFF;
 }
 .box-1 p{
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #B8C1CC;
     margin-top: 10px;
@@ -1163,7 +1164,7 @@ ul li{
 /* sixth page */
 
 .sixth-page{
-    padding-top: 30px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1198,51 +1199,45 @@ ul li{
     justify-content: center;
     gap: 30px;
 }
+
 /* seventh page */
 
 .cards img{
     border-radius: 10px;
-    height: auto;
+    height: 25vh;
     width: 100%;
+    
 }
 #cta-box{
-    line-height: 12px;
+    line-height: 18px;
     padding: 1px 0px 0 20px;
-    margin-top: 10px;
+    margin-top: 0px;
     height: auto;
     width:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1px;
 }
+
 .cta-h{
     font-family: 'Playfair Display', serif;
-    font-size: 6px;
+    font-size: 15px;
     color: #FFFFFF;
 }
 .cta-text{
-    width: 60%;
+    width: 50%;
     font-family: 'Playfair Display', serif;
-    font-size: 8px;
+    font-size: 12px;
     color: #D4AF37;
 }
-.cta-p{
-    width: 60%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 6px;
-    color: #B8C1CC;
-}
+
 .card-paracta{
     margin-top: 0px;
     padding-bottom: 10px;
 }
 [type="email"]{
-    margin-top: 1px;
+    margin-top: 10px;
     padding-left: 10px;
-    font-size: 5px;
-    height: 15px;
-    width: 100px;
+    font-size: 10px;
+    height: 20px;
+    width: 120px;
     background: none;
     border-radius: 10px;
     border: solid 1px #B8C1CC;
@@ -1253,10 +1248,10 @@ ul li{
     background: none;
     background-color: #D4AF37;
     border: solid 1px #D4AF37;
-    font-size: 5px;
+    font-size: 10px;
     border-radius: 15px;
-    height: 18px;
-    width: 50px;
+    height: 20px;
+    width: 70px;
 }
 /* footer */
 .footer-all{
@@ -1265,21 +1260,25 @@ ul li{
     background-color: #071A2B;
 }
 .footer{
-  
     display: flex;
     justify-content: center;
     flex-direction: column;
     justify-content: space-around;
 }
 .footer-title{
-    padding-left: 30px;
+    text-align: center;
+    padding-left: 0px;
     margin-top: 10px;
 }
 .footer-title span{
     font-weight: bold;
     font-size: 20px;
 }
+.footer-title p{
+    text-align: center;
+}
 .footer-quick{
+    text-align: ;
     margin-top: 20px;
 }
 .footer-quick span{
@@ -1290,6 +1289,7 @@ ul li{
     font-size: 18px;
 }
 .footer-quick ul li a{
+    margin-left: 25px;
     font-size: 20px;
 }
 .footer-title ul li {
@@ -1301,12 +1301,16 @@ ul li{
     font-size: 20px;
 }
 .footer-customer ul li {
+     margin-left: 25px;
     line-height: 30px;
     font-size: 20px;
   
 }
 .footer-contact{
     padding-left: 30px;
+}
+.mail{
+    margin-left: 25px;
 }
 .footer-contact span{
     font-weight: bold;
