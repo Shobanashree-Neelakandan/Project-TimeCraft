@@ -101,16 +101,11 @@
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
-    
-    
-    
-    /* background-color: #D4AF37; */
 }
 
 /* second page */
 
 .second-page {
-    /* background-color: #0e1d30; */
     height: 90vh;
 }
 
@@ -1278,7 +1273,6 @@ ul li{
     text-align: center;
 }
 .footer-quick{
-    text-align: ;
     margin-top: 20px;
 }
 .footer-quick span{
